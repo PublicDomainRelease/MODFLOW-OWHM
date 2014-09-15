@@ -1,0 +1,25 @@
+        24        71     -999.
+BAS     HD     I         1     3750	8750 insideF2_L1
+BAS     HD     I         2     3750	8750 insideF2_L2
+BAS     HD     I         1     6750	4250 northofF4_L1
+BAS     HD     I         2     6750	4250 northofF4_L2
+SFR     SI     C         1     2        13 canal_div_f1
+SFR     SO     C         1     2        13 canal_div_f1
+SFR     SI     C         1     2        16 canal_div_f2
+SFR     SO     C         1     2        16 canal_div_f2
+SFR     SI     C         1     6        5  canal_div_f3
+SFR     SO     C         1     6        5  canal_div_f3
+SFR     SI     C         1     6        15 canal_div_f4
+SFR     SO     C         1     6        15 canal_div_f4
+SFR     SI     C         1     10       4  canal_div_f6
+SFR     SO     C         1     10       4  canal_div_f6
+SFR     SI     C         1     3        2  return_fl_f1
+SFR     SO     C         1     3        2  return_fl_f1
+SFR     SI     C         1     2        23 return_fl_f2
+SFR     SO     C         1     2        23 return_fl_f2
+SFR     SI     C         1     7        5  return_fl_f3
+SFR     SO     C         1     7        5  return_fl_f3
+SFR     SI     C         1     6        23 return_fl_f4
+SFR     SO     C         1     6        23 return_fl_f4
+SFR     SI     C         1     11       2  return_fl_f6
+SFR     SO     C         1     11       2  return_fl_f6

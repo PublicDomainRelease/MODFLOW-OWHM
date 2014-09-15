@@ -1,0 +1,265 @@
+ 
+ ZONEBUDGET version 3.00                 
+ Program to compute a flow budget for subregions of a model using
+ budget data from MODFLOW, the USGS Modular Ground-Water Flow Model.
+ 
+  Enter a LISTING FILE for results or a base name and file types:
+ CSV2 output file: FMP_waterbalance.out.2.csv
+ Zonebudget log file: FMP_waterbalance.out.log
+ 
+  Enter the name of the file containing CELL-BY-CELL BUDGET TERMS:
+ 
+          7 layers        23 rows        20 columns
+ 
+  Enter a TITLE to be printed in the listing:
+ 
+  Enter the name of your ZONE INPUT FILE (CR for interactive):
+ 
+           8  zones.
+    1    2    3    4    5    6    7    8
+ 
+  Choose the option for specifying when budgets are calculated:
+  A = ALL times stored in the budget file.
+  P = For each time stored in the budget file, PROMPT user.
+  L = Enter a LIST of times.
+ 
+ Computing the budget for time step  1 in stress period  2
+ Computing the budget for time step 10 in stress period  2
+ Computing the budget for time step  1 in stress period  3
+ Computing the budget for time step 10 in stress period  3
+ Computing the budget for time step  1 in stress period  4
+ Computing the budget for time step 10 in stress period  4
+ Computing the budget for time step  1 in stress period  5
+ Computing the budget for time step 10 in stress period  5
+ Computing the budget for time step  1 in stress period  6
+ Computing the budget for time step 10 in stress period  6
+ Computing the budget for time step  1 in stress period  7
+ Computing the budget for time step 10 in stress period  7
+ Computing the budget for time step  1 in stress period  8
+ Computing the budget for time step 10 in stress period  8
+ Computing the budget for time step  1 in stress period  9
+ Computing the budget for time step 10 in stress period  9
+ Computing the budget for time step  1 in stress period 10
+ Computing the budget for time step 10 in stress period 10
+ Computing the budget for time step  1 in stress period 11
+ Computing the budget for time step 10 in stress period 11
+ Computing the budget for time step  1 in stress period 12
+ Computing the budget for time step 10 in stress period 12
+ Computing the budget for time step  1 in stress period 13
+ Computing the budget for time step 10 in stress period 13
+ Computing the budget for time step  1 in stress period 14
+ Computing the budget for time step 10 in stress period 14
+ Computing the budget for time step  1 in stress period 15
+ Computing the budget for time step 10 in stress period 15
+ Computing the budget for time step  1 in stress period 16
+ Computing the budget for time step 10 in stress period 16
+ Computing the budget for time step  1 in stress period 17
+ Computing the budget for time step 10 in stress period 17
+ Computing the budget for time step  1 in stress period 18
+ Computing the budget for time step 10 in stress period 18
+ Computing the budget for time step  1 in stress period 19
+ Computing the budget for time step 10 in stress period 19
+ Computing the budget for time step  1 in stress period 20
+ Computing the budget for time step 10 in stress period 20
+ Computing the budget for time step  1 in stress period 21
+ Computing the budget for time step 10 in stress period 21
+ Computing the budget for time step  1 in stress period 22
+ Computing the budget for time step 10 in stress period 22
+ Computing the budget for time step  1 in stress period 23
+ Computing the budget for time step 10 in stress period 23
+ Computing the budget for time step  1 in stress period 24
+ Computing the budget for time step 10 in stress period 24
+ Computing the budget for time step  1 in stress period 25
+ Computing the budget for time step 10 in stress period 25
+ Computing the budget for time step  1 in stress period 26
+ Computing the budget for time step 10 in stress period 26
+ Computing the budget for time step  1 in stress period 27
+ Computing the budget for time step 10 in stress period 27
+ Computing the budget for time step  1 in stress period 28
+ Computing the budget for time step 10 in stress period 28
+ Computing the budget for time step  1 in stress period 29
+ Computing the budget for time step 10 in stress period 29
+ Computing the budget for time step  1 in stress period 30
+ Computing the budget for time step 10 in stress period 30
+ Computing the budget for time step  1 in stress period 31
+ Computing the budget for time step 10 in stress period 31
+ Computing the budget for time step  1 in stress period 32
+ Computing the budget for time step 10 in stress period 32
+ Computing the budget for time step  1 in stress period 33
+ Computing the budget for time step 10 in stress period 33
+ Computing the budget for time step  1 in stress period 34
+ Computing the budget for time step 10 in stress period 34
+ Computing the budget for time step  1 in stress period 35
+ Computing the budget for time step 10 in stress period 35
+ Computing the budget for time step  1 in stress period 36
+ Computing the budget for time step 10 in stress period 36
+ Computing the budget for time step  1 in stress period 37
+ Computing the budget for time step 10 in stress period 37
+ Computing the budget for time step  1 in stress period 38
+ Computing the budget for time step 10 in stress period 38
+ Computing the budget for time step  1 in stress period 39
+ Computing the budget for time step 10 in stress period 39
+ Computing the budget for time step  1 in stress period 40
+ Computing the budget for time step 10 in stress period 40
+ Computing the budget for time step  1 in stress period 41
+ Computing the budget for time step 10 in stress period 41
+ Computing the budget for time step  1 in stress period 42
+ Computing the budget for time step 10 in stress period 42
+ Computing the budget for time step  1 in stress period 43
+ Computing the budget for time step 10 in stress period 43
+ Computing the budget for time step  1 in stress period 44
+ Computing the budget for time step 10 in stress period 44
+ Computing the budget for time step  1 in stress period 45
+ Computing the budget for time step 10 in stress period 45
+ Computing the budget for time step  1 in stress period 46
+ Computing the budget for time step 10 in stress period 46
+ Computing the budget for time step  1 in stress period 47
+ Computing the budget for time step 10 in stress period 47
+ Computing the budget for time step  1 in stress period 48
+ Computing the budget for time step 10 in stress period 48
+ Computing the budget for time step  1 in stress period 49
+ Computing the budget for time step 10 in stress period 49
+ Computing the budget for time step  1 in stress period 50
+ Computing the budget for time step 10 in stress period 50
+ Computing the budget for time step  1 in stress period 51
+ Computing the budget for time step 10 in stress period 51
+ Computing the budget for time step  1 in stress period 52
+ Computing the budget for time step 10 in stress period 52
+ Computing the budget for time step  1 in stress period 53
+ Computing the budget for time step 10 in stress period 53
+ Computing the budget for time step  1 in stress period 54
+ Computing the budget for time step 10 in stress period 54
+ Computing the budget for time step  1 in stress period 55
+ Computing the budget for time step 10 in stress period 55
+ Computing the budget for time step  1 in stress period 56
+ Computing the budget for time step 10 in stress period 56
+ Computing the budget for time step  1 in stress period 57
+ Computing the budget for time step 10 in stress period 57
+ Computing the budget for time step  1 in stress period 58
+ Computing the budget for time step 10 in stress period 58
+ Computing the budget for time step  1 in stress period 59
+ Computing the budget for time step 10 in stress period 59
+ Computing the budget for time step  1 in stress period 60
+ Computing the budget for time step 10 in stress period 60
+ Computing the budget for time step  1 in stress period 61
+ Computing the budget for time step 10 in stress period 61
+ Computing the budget for time step  1 in stress period 62
+ Computing the budget for time step 10 in stress period 62
+ Computing the budget for time step  1 in stress period 63
+ Computing the budget for time step 10 in stress period 63
+ Computing the budget for time step  1 in stress period 64
+ Computing the budget for time step 10 in stress period 64
+ Computing the budget for time step  1 in stress period 65
+ Computing the budget for time step 10 in stress period 65
+ Computing the budget for time step  1 in stress period 66
+ Computing the budget for time step 10 in stress period 66
+ Computing the budget for time step  1 in stress period 67
+ Computing the budget for time step 10 in stress period 67
+ Computing the budget for time step  1 in stress period 68
+ Computing the budget for time step 10 in stress period 68
+ Computing the budget for time step  1 in stress period 69
+ Computing the budget for time step 10 in stress period 69
+ Computing the budget for time step  1 in stress period 70
+ Computing the budget for time step 10 in stress period 70
+ Computing the budget for time step  1 in stress period 71
+ Computing the budget for time step 10 in stress period 71
+ Computing the budget for time step  1 in stress period 72
+ Computing the budget for time step 10 in stress period 72
+ Computing the budget for time step  1 in stress period 73
+ Computing the budget for time step 10 in stress period 73
+ Computing the budget for time step  1 in stress period 74
+ Computing the budget for time step 10 in stress period 74
+ Computing the budget for time step  1 in stress period 75
+ Computing the budget for time step 10 in stress period 75
+ Computing the budget for time step  1 in stress period 76
+ Computing the budget for time step 10 in stress period 76
+ Computing the budget for time step  1 in stress period 77
+ Computing the budget for time step 10 in stress period 77
+ Computing the budget for time step  1 in stress period 78
+ Computing the budget for time step 10 in stress period 78
+ Computing the budget for time step  1 in stress period 79
+ Computing the budget for time step 10 in stress period 79
+ Computing the budget for time step  1 in stress period 80
+ Computing the budget for time step 10 in stress period 80
+ Computing the budget for time step  1 in stress period 81
+ Computing the budget for time step 10 in stress period 81
+ Computing the budget for time step  1 in stress period 82
+ Computing the budget for time step 10 in stress period 82
+ Computing the budget for time step  1 in stress period 83
+ Computing the budget for time step 10 in stress period 83
+ Computing the budget for time step  1 in stress period 84
+ Computing the budget for time step 10 in stress period 84
+ Computing the budget for time step  1 in stress period 85
+ Computing the budget for time step 10 in stress period 85
+ Computing the budget for time step  1 in stress period 86
+ Computing the budget for time step 10 in stress period 86
+ Computing the budget for time step  1 in stress period 87
+ Computing the budget for time step 10 in stress period 87
+ Computing the budget for time step  1 in stress period 88
+ Computing the budget for time step 10 in stress period 88
+ Computing the budget for time step  1 in stress period 89
+ Computing the budget for time step 10 in stress period 89
+ Computing the budget for time step  1 in stress period 90
+ Computing the budget for time step 10 in stress period 90
+ Computing the budget for time step  1 in stress period 91
+ Computing the budget for time step 10 in stress period 91
+ Computing the budget for time step  1 in stress period 92
+ Computing the budget for time step 10 in stress period 92
+ Computing the budget for time step  1 in stress period 93
+ Computing the budget for time step 10 in stress period 93
+ Computing the budget for time step  1 in stress period 94
+ Computing the budget for time step 10 in stress period 94
+ Computing the budget for time step  1 in stress period 95
+ Computing the budget for time step 10 in stress period 95
+ Computing the budget for time step  1 in stress period 96
+ Computing the budget for time step 10 in stress period 96
+ Computing the budget for time step  1 in stress period 97
+ Computing the budget for time step 10 in stress period 97
+ Computing the budget for time step  1 in stress period 98
+ Computing the budget for time step 10 in stress period 98
+ Computing the budget for time step  1 in stress period 99
+ Computing the budget for time step 10 in stress period 99
+ Computing the budget for time step  1 in stress period100
+ Computing the budget for time step 10 in stress period100
+ Computing the budget for time step  1 in stress period101
+ Computing the budget for time step 10 in stress period101
+ Computing the budget for time step  1 in stress period102
+ Computing the budget for time step 10 in stress period102
+ Computing the budget for time step  1 in stress period103
+ Computing the budget for time step 10 in stress period103
+ Computing the budget for time step  1 in stress period104
+ Computing the budget for time step 10 in stress period104
+ Computing the budget for time step  1 in stress period105
+ Computing the budget for time step 10 in stress period105
+ Computing the budget for time step  1 in stress period106
+ Computing the budget for time step 10 in stress period106
+ Computing the budget for time step  1 in stress period107
+ Computing the budget for time step 10 in stress period107
+ Computing the budget for time step  1 in stress period108
+ Computing the budget for time step 10 in stress period108
+ Computing the budget for time step  1 in stress period109
+ Computing the budget for time step 10 in stress period109
+ Computing the budget for time step  1 in stress period110
+ Computing the budget for time step 10 in stress period110
+ Computing the budget for time step  1 in stress period111
+ Computing the budget for time step 10 in stress period111
+ Computing the budget for time step  1 in stress period112
+ Computing the budget for time step 10 in stress period112
+ Computing the budget for time step  1 in stress period113
+ Computing the budget for time step 10 in stress period113
+ Computing the budget for time step  1 in stress period114
+ Computing the budget for time step 10 in stress period114
+ Computing the budget for time step  1 in stress period115
+ Computing the budget for time step 10 in stress period115
+ Computing the budget for time step  1 in stress period116
+ Computing the budget for time step 10 in stress period116
+ Computing the budget for time step  1 in stress period117
+ Computing the budget for time step 10 in stress period117
+ Computing the budget for time step  1 in stress period118
+ Computing the budget for time step 10 in stress period118
+ Computing the budget for time step  1 in stress period119
+ Computing the budget for time step 10 in stress period119
+ Computing the budget for time step  1 in stress period120
+ Computing the budget for time step 10 in stress period120
+ Computing the budget for time step  1 in stress period121
+ Computing the budget for time step 10 in stress period121

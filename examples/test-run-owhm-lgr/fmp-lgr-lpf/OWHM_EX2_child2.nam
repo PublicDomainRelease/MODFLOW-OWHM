@@ -1,0 +1,21 @@
+list           712 ../../test-out-owhm-lgr/fmp-lgr-lpf/OWHM_EX2_child2.lst
+lpf            912 OWHM_EX2_child2.lpf
+bas6          1012 OWHM_EX2_child2.ba6
+dis           1112 OWHM_EX2_child2.dis
+#fmp           1212 OWHM_EX2_child2.fmp   --> No file present for this as this child is not using fmp
+oc            1912 OWHM_EX2_child2.oc
+# Solvers
+pcg           1812 OWHM_EX2.pcg
+#
+data          2212 ../../test-out-owhm-lgr/fmp-lgr-lpf/OWHM_EX2_child2.hed
+#FMP Datafiles
+#data          2012 OFE.in
+#data          3012 ROOT.in
+#data          4012 KC.in
+#data          5012 FTE.in
+#data          6012 INEFFSW.in
+#DATA          8012 NRDFAC.in
+#
+data(BINARY)  7012 ../../test-out-owhm-lgr/fmp-lgr-lpf/CBC_child2.OUT
+DATA          5912 ../../test-out-owhm-lgr/fmp-lgr-lpf/OWHM_EX2_child_bfh2.hed
+DATA          6912 ../../test-out-owhm-lgr/fmp-lgr-lpf/OWHM_EX2_child_bfh2.flw

@@ -1,0 +1,345 @@
+U.S. Geological Survey (USGS)                               MODFLOW-OWHM
+
+NOTE: Any use of trade, product or firm names is for descriptive purposes
+      only and does not imply endorsement by the U.S. Government.
+
+NAME
+     MF-OWHM - One-Water Hydrologic Flow Model - (http://pubs.usgs.gov/tm/tm6a51/)
+                  Modular three-dimensional finite-difference ground-water model 
+               Version 1.00.00 (11/05/2014) includes MODFLOW-2005 - Version: 1.11.0  08/08/2013
+
+ABSTRACT
+     The One-Water Hydrologic Flow Model (MF-OWHM) is a MODFLOW-based integrated 
+     hydrologic flow model (IHM) that is the most complete version, to date, of 
+     the MODFLOW family of hydrologic simulators needed for the analysis of a 
+     broad range of conjunctive-use issues. Conjunctive use is the combined use of 
+     groundwater and surface water. MF-OWHM allows the simulation, analysis, and 
+     management of nearly all components of human and natural water movement and 
+     use in a physically-based supply-and-demand framework. MF-OWHM is based on 
+     the Farm Process for MODFLOW-2005 (MF-FMP2) combined with Local Grid 
+     Refinement (LGR) for embedded models to allow use of the Farm Process (FMP) 
+     and Streamflow Routing (SFR) within embedded grids. MF-OWHM also includes 
+     new features such as the Surface-water Routing Process (SWR), Seawater 
+     Intrusion (SWI), and Riparian Evapotranspiration (RIP-ET), and new solvers 
+     such as Newton-Raphson (NWT) and nonlinear preconditioned conjugate 
+     gradient (PCGN). This IHM also includes new connectivities to expand the 
+     linkages for deformation-, flow-, and head-dependent flows. 
+     Deformation-dependent flows are simulated through the optional 
+     linkage to simulated land subsidence with a vertically deforming mesh. 
+     Flow-dependent flows now include linkages between the new SWR with 
+     SFR and FMP, as well as connectivity with embedded models for SFR and 
+     FMP through LGR. Head-dependent flows now include a modified Hydrologic 
+     Flow Barrier Package (HFB) that allows optional transient HFB capabilities, 
+     and the flow between any two layers that are adjacent along a depositional 
+     or erosional boundary or displaced along a fault. MF-OWHM represents a complete 
+     operational hydrologic model that fully links the movement and use of groundwater, 
+     surface water, and imported water for consumption by irrigated agriculture, 
+     but also of water used in urban areas and by natural vegetation. 
+     Supply and demand components of water use are analyzed under demand-driven 
+     and supply-constrained conditions. From large- to small-scale settings, 
+     MF-OWHM has the unique set of capabilities to simulate and analyze historical, 
+     present, and future conjunctive-use conditions. MF-OWHM is especially useful for 
+     the analysis of agricultural water use where few data are available for pumpage,     
+     land use, or agricultural information. The features presented in this IHM include 
+     additional linkages with SFR, SWR, Drain-Return (DRT), Multi-Node Wells 
+     (MNW1 and MNW2), and Unsaturated-Zone Flow (UZF). Thus, MF-OWHM helps to 
+     reduce the loss of water during simulation of the hydrosphere and helps to 
+     account for "all of the water everywhere and all of the time."
+     
+     In addition to groundwater, surface-water, and landscape budgets, MF-OWHM 
+     provides more options for observations of land subsidence, hydraulic properties, 
+     and evapotranspiration (ET) than previous models. Detailed landscape budgets 
+     combined with output of estimates of actual evapotranspiration facilitates 
+     linkage to remotely sensed observations as input or as additional observations 
+     for parameter estimation or water-use analysis. The features of FMP have been 
+     extended to allow for temporally variable water-accounting units (farms) that 
+     can be linked to land-use models and the specification of both surface-water 
+     and groundwater allotments to facilitate sustainability analysis and connectivity 
+     to the Groundwater Management Process (GWM).
+     
+METHOD
+     The ground-water flow equation is solved using the finite-difference
+     approximation.  The flow region is subdivided into blocks in which
+     the medium properties are assumed to be uniform.  In plan view the
+     blocks are made from a grid of mutually perpendicular lines that may
+     be variably spaced.  Model layers can have varying thickness.  A flow
+     equation is written for each block, called a cell.  Several solvers
+     are provided for solving the resulting matrix problem; the user can
+     choose the best solver for the particular problem.  Flow-rate and
+     cumulative-volume balances from each type of inflow and outflow are
+     computed for each time step.
+
+
+HISTORY
+      MF-OWHM Version 1.0.00 This version is the initial release (MF-OWHM).
+        See FUNTIONALITY for package listing.
+
+DATA REQUIREMENTS
+     In order to use MODFLOW, initial conditions, hydraulic properties,
+     and stresses must be specified for every model cell in the finite-
+     difference grid. Input data are read from files.
+
+
+SYSTEM REQUIREMENTS
+     MODFLOW-OWHM is written primarily in Fortran 90/95 and makes use of features
+     in Fortran 2003 and 2008. Only the GMG solver package is written in C.  
+     The code has been used on UNIX-based computers and personal computers 
+     running various forms of the Microsoft Windows operating system.
+
+
+FUNTIONALITY
+     MF-OWHM includes the following functionality that is
+     documented in Harbaugh (2005).
+
+         BAS -- Basic Package
+         DIS -- Discretization Package
+         BCF -- Block-Centered Flow Package
+         LPF -- Layer-Property Flow Package
+         HFB -- Horizontal Flow Barrier Package
+         CHD -- Time-Variant Specified-Head Option
+         RIV -- River Package
+         DRN -- Drain Package
+         WEL -- Well Package
+         GHB -- General Head Boundary Package
+         RCH -- Recharge Package
+         EVT -- Evapotranspiration Package
+         SIP -- Strongly Implicit Procedure Package
+         PCG -- Preconditioned Conjugate Gradient Package
+         DE4 -- Direct solver
+         PVAL-- Parameter Value Package
+         ZONE-- Zone Package
+         MULT-- Multiplier Package
+         OC  -- Output Control
+
+      The following functionality is included in MF-OWHM
+      
+         FMP -- Farm Process
+         SWR -- Surface Water Routing
+         SWI -- Seawater Intrusion Package
+         UPW -- Upstream Weight Package
+         MNW1-- Multi-Node Well Package Version 1
+         MNW2-- Multi-Node Well Package Version 2
+         MNWI-- Multi-Node Well Information Package
+         LGR -- Local Grid Refinement Package
+         BFH -- Boundary Flow and Head Package
+         GMG -- Geometric Multigrid Solver
+         PCGN-- Preconditioned Conjugate Gradient Solver with Improved Nonlinear Control package
+         NWT -- Newton Solver
+         RIP -- Riparian Evapotranspiration
+         STR -- Streamflow-Routing Package
+         FHB -- Flow and Head Boundary Package
+         IBS -- Interbed Storage Package
+         HUF -- Hydrogeologic-Unit Flow Package
+         KDEP-- Hydraulic-Conductivity Depth-Dependence Capability
+         LVDA-- Model-Layer Variable-Direction Horizontal Anisotropy Package
+         ETS -- Evapotranspiration with a Segmented Function Package
+         DRT -- Drains with Return Flow Package
+         RES -- Reservoir Package
+         SUB -- Subsidence Package
+         SFR -- Streamflow-Routing Package
+         LAK -- Lake Package
+         UZF -- Unsaturated Zone Package
+         GAGE-- Gage Package
+         OBS -- Observation Process
+         HOB -- Head Observation Package
+         CHOB-- Constant Head Observation Package
+         GBOB-- General-Head-Boundary Observation Package
+         DROB-- Drain Observation Package
+         RVOB-- River Observation Package
+         SWT -- Subsidence and Aquifer-System Compaction Package +/- Water Table Conditions
+         LMT -- Link to the MT3DMS contaminant-transport model
+         HYD -- HYDMOD Hydrograph capability for groundwater, surface-water, and subsidence time-series data
+
+DOCUMENTATION
+
+  The basic documentation for MF-OWHM is contained in:
+  
+Hanson, R.T., Boyce, S.E., Schmid, Wolfgang, Hughes, J.D., Mehl, S.M., Leake, S.A., Maddock, Thomas, III, and
+Niswonger, R.G., 2014, One-Water Hydrologic Flow Model (MODFLOW-OWHM): U.S. Geological Survey Techniques
+and Methods 6-A51, 120 p., http://dx.doi.org/10.3133/tm6A51.
+
+  The basic documentation for MODFLOW-2005 is contained in:
+
+Harbaugh, A.W., 2005, MODFLOW-2005, the U.S. Geological Survey modular
+ground-water model -- the Ground-Water Flow Process: U.S. Geological Survey
+Techniques and Methods 6-A16, variously p.
+
+  The FMP Process is documented in:
+
+Schmid, W., Hanson, R.T., Maddock III, T.M., and Leake, S.A., 2006, 
+User’s guide for the Farm Package (FMP1) for the U.S. Geological Survey’s 
+modular three-dimensional finite-difference ground-water flow model, MODFLOW-2000: 
+U.S. Geological Survey Techniques and Scientific Methods Report Book 6, Chapter A17, 
+127p. (http://pubs.usgs.gov/tm/2006/tm6A17/)
+
+Schmid, Wolfgang, and Hanson R.T., 2009, The Farm Process Version 2 (FMP2) for 
+MODFLOW-2005 - Modifications and Upgrades to FMP1: U.S. Geological Survey Techniques 
+in Water Resources Investigations, Book 6, Chapter A32, 102p. (http://pubs.usgs.gov/tm/tm6a32/)
+
+The Surface-Water Routing Process is documented in:
+
+Hughes, J.D., Langevin, C.D., Chartier, K.L., and White, J.T., 2012, 
+Documentation of the Surface-Water Routing (SWR1) Process for modeling 
+surface-water flow with the U.S. Geological Survey Modular Ground-Water 
+Model (MODFLOW-2005): U.S. Geological Survey Techniques and Methods, book 
+6, chap. A40 (Version 1.0), 113 p. Available online at http://pubs.usgs.gov/tm/6a40/
+
+MODFLOW-NWT is documented in:
+
+Niswonger, R.G., Panday, Sorab, and Ibaraki, Motomu, 2011, MODFLOW-NWT, 
+A Newton formulation for MODFLOW-2005: U.S. Geological Survey Techniques 
+and Methods 6-A37, 44 p.
+
+The SWI2 Package is documented in:
+
+Bakker, M., Schaars, F., Hughes, J.D., Langevin, C.D., Dausman, A.M., 2013, 
+Documentation of the seawater intrusion (SWI2) package for MODFLOW: 
+U.S. Geological Survey Techniques and Methods, book 6, chap. A46, 47 p.
+
+
+
+  The STR Package is documented in:
+
+Prudic, D.E., 1989, Documentation of a computer program to simulate
+stream-aquifer relations using a modular, finite-difference, ground-water
+flow model: U.S. Geological Survey Open-File Report 88-729, 113 p.
+
+  The FHB Package is documented in:
+
+Leake, S.A., and Lilly, M.R., 1997, Documentation of a computer program
+(FHB1) for assignment of transient specified-flow and specified-head
+boundaries in applications of the modular finite- difference ground-water
+flow model (MODFLOW): U.S. Geological Survey Open-File Report 97-571, 50 p.
+
+  The IBS Package is documented in:
+
+Leake, S.A. and Prudic, D.E., 1991, Documentation of a computer program
+to simulate aquifer-system compaction using the modular
+finite-difference ground-water flow model: U.S. Geological Survey
+Techniques of Water-Resources Investigations, Book 6, Chapter A2, 68 p.
+
+  The HUF Package is documented in:
+
+Anderman, E.R., and Hill, M.C., 2000, MODFLOW-2000, the U.S. Geological
+Survey modular ground-water model -- Documentation of the Hydrogeologic-
+Unit Flow (HUF) Package: U.S. Geological Survey Open-File Report 00-342,
+89 p.
+     
+Anderman, E.R., Kipp, K.L., Hill, M.C., Valstar, Johan, and Neupauer,
+R.M., 2002, MODFLOW-2000, the U.S. Geological Survey modular ground-water
+model -- Documentation of the Model-Layer Variable-Direction Horizontal
+Anisotropy (LVDA) capability of the Hydrogeologic-Unit Flow (HUF) Package:
+U.S. Geological Survey Open-File Report 02-409, 60 p.
+
+Anderman, E.R., and Hill, M.C., 2003, MODFLOW-2000, the U.S. Geological
+Survey modular ground-water model -- Three additions to the
+Hydrogeologic-Unit Flow (HUF) Package: Alternative storage for the
+uppermost active cells, Flows in hydrogeologic units, and the
+Hydraulic-conductivity depth-dependence (KDEP) capability:U.S. Geological
+Survey Open-File Report 03-347, 36 p.
+
+  The MNW Package is documented in:
+
+Halford, K.J. and Hanson, R.T., 2002, User guide for the drawdown-limited,
+multi-node well (MNW) package for the U.S. Geological Survey's modular
+three-dimensional finite-difference ground-water flow model, versions
+MODFLOW-96 and MODFLOW-2000: U.S. Geological Survey Open-File Report
+02-293, 33 p.
+
+  The DRT and ETS Packages are documented in:
+
+Banta, E.R., 2000, MODFLOW-2000, the U.S. Geological Survey modular
+ground-water model -- documentation of packages for simulating
+evapotranspiration with a segmented function (ETS1) and drains with return
+flow (DRT1): U.S. Geological Survey Open-File Report 00-466, 127 p.
+
+  The RES Package is documented in:
+
+Fenske, J.P., Leake, S.A., and Prudic, D.E., 1996, Documentation of a
+computer program (RES1) to simulate leakage from reservoirs using the
+modular finite-difference ground-water flow model (MODFLOW): U.S.
+Geological Survey Open-File Report 96-364, 51 p.
+
+  The SUB Package is documented in:
+
+Hoffmann, Jorn, Leake, S.A., Galloway, D.L., and Wilson, A.M., 2003,
+MODFLOW-2000 ground-water model -- User guide to the Subsidence and
+Aquifer-System Compaction (SUB) Package: U.S. Geological Survey Open-File
+Report 03-233, 46 p.
+
+  The OBS Process is documented in:
+  
+Hill, M.C., Banta, E.R., Harbaugh, A.W., and Anderman, E.R., 2000,
+MODFLOW-2000, the U.S. Geological Survey modular ground-water model --
+User guide to the Observation, Sensitivity, and Parameter-Estimation
+Processes and three post-processing programs: U.S. Geological Survey
+Open-File Report 00-184, 209 p.
+
+See file obs.pdf for documentation of the OBS Process in MODFLOW-2005,
+including input instructions.
+
+  The SFR Package is documented in:
+
+Prudic, D.E., Konikow, L.F., and Banta, E.R., A new Streamflow-Routing
+(SFR1) Package to simulate stream-aquifer interaction with MODFLOW-2000:
+U.S. Geological Survey Open File Report 2004-1042, 95 p.
+
+Niswonger, R.G., and Prudic, D.E., 2005, Documentation of the
+Streamflow-Routing (SFR2) Package to include unsaturated flow beneath
+streams -- a modification to SFR1: U.S. Geological Techniques and Methods
+Book 6, Chapter A13, 47 p.
+
+  The UZF Package is documented in:
+
+Niswonger, R.G., Prudic, D.E., and Regan, R.S., 2006, Documentation of
+the Unsaturated-Zone Flow (UZF1) Package for modeling unsaturated flow
+between the land surface and the water table with MODFLOW-2005: U.S.
+Geological Techniques and Methods Book 6, Chapter A19, 62 p.
+  
+  The LAK Package is documented in:
+  
+Merritt, M.L., and Konikow, L.F., 2000, Documentation of a computer
+program to simulate lake-aquifer interaction using the MODFLOW ground-water
+flow model and the MOC3D solute-transport model: Water-Resources
+Investigations Report 00-4167, 146 p.
+
+  The GAG Package is documented as part of the above SFR and LAK
+  documentation.
+
+  The SWT Package is documented in:
+  
+Leake, S.A. and Galloway, D.L., 2007, MODFLOW ground-water model -- User
+guide to the Subsidence and Aquifer-System Compaction Package (SUB-WT) for
+water-table aquifers: U.S. Geological Survey Techniques and Methods 6-A23,
+42 p.
+
+  The LMT Package is documented in:
+  
+Zheng, Chunmiao, Hill, M.C., and Hsieh, P.A., 2001, MODFLOW-2000, the U.S.
+Geological Survey modular ground-water model - User guide to the LMT6
+package, the linkage with MT3DMS for multi-species mass transport modeling:
+U.S. Geological Survey Open-File Report 01-82, 43 p.
+
+   HYDMOD is documented in:
+
+Hanson, R.T. and Leake, S.A., 1999, Documentation of HYDMOD, a program for
+extracting and processing time-series data from the U.S. Geological
+Survey's modular three-dimensional finite-difference ground-water flow
+model: U.S. Geological Survey Open-File Report 98-564, 57 p.
+
+A separate file, hydmod7.pdf, documents the conversion for MODFLOW-2005.
+
+CONTACTS
+    U.S. Geological Survey
+    California Water Science Center
+    4165 Spruance Road, Suite 200
+    San Diego, CA 92101
+    (619) 225-6139
+    MODFLOW_OWHM@usgs.gov
+
+
+    See
+
+      http://water.usgs.gov/software/ordering_documentation.html
+
+    for information on ordering printed copies of USGS publications.

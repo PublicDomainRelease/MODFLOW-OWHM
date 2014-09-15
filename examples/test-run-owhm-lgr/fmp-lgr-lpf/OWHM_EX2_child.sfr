@@ -1,0 +1,30 @@
+# Project 1 New Stream Aquifer Package
+1 1 0 0 86400 0.0001 7011 77      NSTRM NSS NSTRPAR NPARSEG CONST(0-if-no-Mann.,1-if-Mann&meter,1.486-if-Mann&ft) DLEAK ISTCB1 ISTCB2     
+1	1	1	1	1	1  KRCH IRCH JRCH ISTRM4(seg#) ISTRM5(reach#/seg) RCHLEN - dummy numbers
+1  1  0                                    ITMP IRDFLG(1= slope of canals follows ground-surface at interpolated depth) IPTFLG(0 results printed!)
+1 1 0 0 0. 0. 0. 0. 0.01  STREAM:
+0.0 1. 1. 1.              HCOND1 THICKM1 ELEVUP WIDTH1 (DEPTH1)              
+0.0 1. 0. 1.              HCOND2 THICKM2 ELEVDN WIDTH2 (DEPTH2)
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0
+-1 1 0

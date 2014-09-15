@@ -1,0 +1,17 @@
+# generic model 1
+free MAXPARAM 10 20 1  PERCENTERROR 5
+constant 1
+constant 1
+constant 1
+constant 1
+constant 1
+constant 1
+constant 1
+-999
+OPEN/CLOSE DATA_FMP/GSE.in 1.0 (FREE) -1	TOP of layer 1
+OPEN/CLOSE DATA_FMP/GSE.in 1.0 (FREE) -1	TOP of layer 1
+OPEN/CLOSE DATA_FMP/GSE.in 1.0 (FREE) -1	TOP of layer 1
+OPEN/CLOSE DATA_FMP/GSE.in 1.0 (FREE) -1	TOP of layer 1
+OPEN/CLOSE DATA_FMP/GSE.in 1.0 (FREE) -1	TOP of layer 1
+OPEN/CLOSE DATA_FMP/GSE.in 1.0 (FREE) -1	TOP of layer 1
+OPEN/CLOSE DATA_FMP/GSE.in 1.0 (FREE) -1	TOP of layer 1
