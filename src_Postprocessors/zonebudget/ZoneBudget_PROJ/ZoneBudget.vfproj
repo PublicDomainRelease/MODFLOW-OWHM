@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{BFB2E503-878D-4D1B-AF79-F1020BB79F40}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" OutputDirectory="$(SolutionDir)bin" IntermediateDirectory="$(ProjectDir)obj_$(Platform)_$(Configuration)" TargetName="$(ProjectName)_$(PlatformName)_$(ConfigurationName)">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" OpenMPConditionalCompilation="false" WarnInterfaces="true" InitLocalVarToNAN="true" FloatingPointExceptionHandling="fpe0" FloatingPointModel="source" BuildDependencies="true" Traceback="true" NullPointerCheck="true" BoundsCheck="true" UninitializedVariablesCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" GenerateDebugInformation="true" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration>
+		<Configuration Name="Release|Win32" OutputDirectory="$(SolutionDir)bin" IntermediateDirectory="$(ProjectDir)obj_$(Platform)_$(Configuration)" TargetName="$(ProjectName)_$(PlatformName)" WholeProgramOptimization="true">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeFull" InterproceduralOptimizations="ipoSingleFile" OpenMPConditionalCompilation="false" FloatingPointExceptionHandling="fpe0" FloatingPointModel="source"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration>
+		<Configuration Name="Debug|x64" OutputDirectory="$(SolutionDir)bin" IntermediateDirectory="$(ProjectDir)obj_$(Platform)_$(Configuration)" TargetName="$(ProjectName)_$(ConfigurationName)">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" OpenMPConditionalCompilation="false" WarnInterfaces="true" InitLocalVarToNAN="true" FloatingPointExceptionHandling="fpe1" FloatingPointModel="source" BuildDependencies="true" Traceback="true" NullPointerCheck="true" BoundsCheck="true" UninitializedVariablesCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" GenerateDebugInformation="true" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration>
+		<Configuration Name="Release|x64" OutputDirectory="$(SolutionDir)bin" IntermediateDirectory="$(ProjectDir)obj_$(Platform)_$(Configuration)" WholeProgramOptimization="true">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeFull" InterproceduralOptimizations="ipoSingleFile" OpenMPConditionalCompilation="false" FloatingPointExceptionHandling="fpe0" FloatingPointModel="source"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration>
+		<Configuration Name="Release_DP|Win32" OutputDirectory="$(SolutionDir)bin" IntermediateDirectory="$(ProjectDir)obj_$(Platform)_$(Configuration)" TargetName="$(ProjectName)_$(PlatformName)_dble" WholeProgramOptimization="true">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeFull" InterproceduralOptimizations="ipoSingleFile" OpenMPConditionalCompilation="false" FloatingPointExceptionHandling="fpe0" FloatingPointModel="source"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration>
+		<Configuration Name="Release_DP|x64" OutputDirectory="$(SolutionDir)bin" IntermediateDirectory="$(ProjectDir)obj_$(Platform)_$(Configuration)" TargetName="$(ProjectName)_dble" WholeProgramOptimization="true">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeFull" InterproceduralOptimizations="ipoSingleFile" OpenMPConditionalCompilation="false" RealKIND="realKIND8" FloatingPointExceptionHandling="fpe0" FloatingPointModel="source"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration>
+		<Configuration Name="Debug_Full|Win32" OutputDirectory="$(SolutionDir)bin" IntermediateDirectory="$(ProjectDir)obj_$(Platform)_$(Configuration)" TargetName="$(ProjectName)_$(PlatformName)_$(ConfigurationName)">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" OpenMPConditionalCompilation="false" WarnInterfaces="true" InitLocalVarToNAN="true" FloatingPointExceptionHandling="fpe0" FloatingPointModel="source" BuildDependencies="true" Traceback="true" NullPointerCheck="true" BoundsCheck="true" UninitializedVariablesCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" GenerateDebugInformation="true" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration>
+		<Configuration Name="Debug_Full|x64" OutputDirectory="$(SolutionDir)bin" IntermediateDirectory="$(ProjectDir)obj_$(Platform)_$(Configuration)" TargetName="$(ProjectName)_$(ConfigurationName)">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" OpenMPConditionalCompilation="false" WarnUnusedVariables="true" WarnUnalignedData="false" WarnUncalled="true" WarnInterfaces="true" InitLocalVarToNAN="true" FloatingPointExceptionHandling="fpe0" FloatingPointModel="source" BuildDependencies="true" Traceback="true" NullPointerCheck="true" BoundsCheck="true" UninitializedVariablesCheck="true" DescriptorDataTypeCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" GenerateDebugInformation="true" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration>
+		<Configuration Name="Traceback|Win32" TargetName="$(ProjectName)_$(PlatformName)" WholeProgramOptimization="true">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeFull" InterproceduralOptimizations="ipoSingleFile" OpenMPConditionalCompilation="false" FloatingPointExceptionHandling="fpe0" FloatingPointModel="source"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration>
+		<Configuration Name="Traceback|x64" OutputDirectory="$(SolutionDir)bin" IntermediateDirectory="$(ProjectDir)obj_$(Platform)_$(Configuration)" TargetName="$(ProjectName)_$(ConfigurationName)" WholeProgramOptimization="true">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugLineInfoOnly" InterproceduralOptimizations="ipoNone" OpenMPConditionalCompilation="false" FloatingPointExceptionHandling="fpe0" FloatingPointModel="source" Traceback="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ManifestFile="$(IntDir)\$(TargetName).intermediate.manifest" ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb" SubSystem="subSystemConsole" StackReserveSize="10485760" StackCommitSize="10485760"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" OutputManifestFile="$(IntDir)\$(TargetName).embed.manifest" ResourceFile="$(IntDir)\$(TargetName).embed.manifest.res"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+		<File RelativePath="..\src_code\openspec.inc"/></Filter>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath="..\src_code\zonbud.f"/></Filter></Files>
+	<Globals/></VisualStudioProject>

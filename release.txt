@@ -1,24 +1,26 @@
-                           MF-OWHM Release Notes 
+                           MODFLOW 
+               One-Water Hydrologic Flow Model 
+                        Release Notes 
 
-This file describes changes introduced into MF-OWHM with each
+This file describes changes introduced into 
+MODFLOW One-Water Hydrologic Flow Model (bin/OneWater.exe) with each
 official release; these changes may substantially affect users. In this
 file, packages are referred to by their 3-or 4-character abbreviation. 
 For information and references related to earlier changes in MODFLOW-2005 
-(Version 1.11.0  08/08/2013), please refer to the MODFLOW-2005 release 
+(Version 1.12.0  2/03/2017), please refer to the MODFLOW-2005 release 
 notes or the publications for these packages, see MF_OWHM.txt or 
-the MF-OWHM Techniques and Methods Report.
+the MODFLOW One-Water Hydrologic Flow Model Techniques and Methods 
+Report at https://doi.org/10.3133/tm6a60
 
 NOTE: Any use of trade, product or firm names is for descriptive purposes 
       only and does not imply endorsement by the U.S. Government.
 
-o MF-OWHM Version 1.0.00 This version is the initial release (MF-OWHM).
+o OneWater Version 2.0.00 This version is the initial release of version 2.
 
-NOTES to Users:
-  Please see Appendices of MF-OWHM for all other updates and modifications 
-  to packages and processes for 
-  MF-OWHM Version 1.0.00
- 
-  (A) FORTRAN: Modification of Openspec.inc to follow the Fortran 2003 Standard.
-  
-  No other changes are noted for this initial release.
+NOTE: This is a miminal release that contains source code (src directory) and
+      windows compiled executables (bin directory). This was done to release the 
+      report as soon as possible. A future update, will remove this disclaimer and 
+      include a makefile and full set of examples.
+
+
 
